@@ -4,7 +4,7 @@ SRC_UTILS     += $(wildcard $(DIR)/*.c)
 SRC_UTILS_PRE += $(wildcard $(DIR)/convenience/*.c)
 OBJ_UTILS     += $(SRC_UTILS:.c=)
 OBJ_UTILS_PRE += $(SRC_UTILS_PRE:.c=.o)
-LDFLAGS_UTILS = -pthread  -L/tmp -lr820t -lm
+LDFLAGS_UTILS = -pthread  -lr820t -lm -L.
 
 $(DIR)-pre: $(OBJ_UTILS_PRE)
 
