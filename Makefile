@@ -15,7 +15,6 @@ OBJ_UTILS=
 BUILD_DIR=build/
 
 include src/make.mk
-include utils/make.mk
 
 OBJECTS=$(SOURCES:.c=.o)
 
@@ -37,5 +36,3 @@ clean:
 	rm -f *.so
 	rm -f *.so.1
 	rm -f build/src/*.o
-	rm -f build/utils/rtl_*
-	rm -f build/utils/convenience/*.o
